@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulacan | Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: 0.3s ease-in-out;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #fc8bb190;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .tourism {
+            padding: 50px;
+        }
+
+        .tourism h1 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .tourism p {
+            max-width: 800px;
+            margin: 10px auto;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Responsive Grid for Tourism Section */
+        .tourism-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .tourism-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .tourism-item h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .tourism-item p {
+            font-size: 14px;
+            color: #666;
+            flex-grow: 1;
+            margin-bottom: 10px;
+        }
+
+        .tourism-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* History Section */
+        .history {
+            font-size: 13px;
+            color: #444;
+            text-align: left;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            margin-top: auto; /* Push to bottom */
+        }
+
+        footer {
+            background: white;
+            padding: 10px;
+            margin-top: 30px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="bulacan-logo.png" alt="Bulacan Seal" height="60">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#tourism">Tourism</a></li>
+                <li><a href="municipality.html">Municipality</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="tourism" class="tourism">
+        <h1>Explore Bulacan</h1>
+        <p>Bulacan is home to stunning historical landmarks, breathtaking natural wonders, and vibrant festivals. Discover the best places to visit and experience the beauty and culture of the province.</p>
+        
+        <h2>Nature & Adventure 🌿</h2>
+        <div class="tourism-container">
+            <div class="tourism-item">
+                <img src="verdivia-falls.jpg" alt="Verdivia Falls">
+                <h3>Verdivia Falls</h3>
+                <p>(Dona Remedios Trinidad) – A serene waterfall perfect for nature lovers.</p>
+                <div class="history">
+                    <p>💡 <b>History:</b> Verdivia Falls, hidden in the forests of Dona Remedios Trinidad, has been a source of fresh water for locals for centuries. It was named after an old Spanish family who once owned the land.</p>
+                </div>
+            </div>
+
+            <div class="tourism-item">
+                <img src="mount-manalmon.jpg" alt="Mount Manalmon">
+                <h3>Mount Manalmon</h3>
+                <p>(San Miguel) – A hiking spot with caves and river crossings.</p>
+                <div class="history">
+                    <p>💡 <b>History:</b> This mountain played a role in the Philippine Revolution, serving as a strategic hiding place for Filipino revolutionaries during the Spanish era.</p>
+                </div>
+            </div>
+
+            <div class="tourism-item">
+                <img src="biak-na-bato.jpg" alt="Biak-na-Bato National Park">
+                <h3>Biak-na-Bato National Park</h3>
+                <p>A perfect place for nature lovers and adventurers, offering caves, trails, and a glimpse into history.</p>
+                <div class="history">
+                    <p>💡 <b>History:</b> Biak-na-Bato was the headquarters of General Emilio Aguinaldo during the fight against Spanish colonial rule. The first constitution of the Philippines was drafted here in 1897.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Religious & Cultural Sites ⛪</h2>
+        <div class="tourism-container">
+            <div class="tourism-item">
+                <img src="st-augustine-church.jpg" alt="St. Augustine Church">
+                <h3>St. Augustine Church</h3>
+                <p>(Baliuag) – A historical church with remarkable architecture.</p>
+                <div class="history">
+                    <p>💡 <b>History:</b> Built in the 1700s, this church is known for its Spanish Baroque-style architecture and its role in the Catholic faith in Bulacan.</p>
+                </div>
+            </div>
+
+            <div class="tourism-item">
+                <img src="barasoain-church.jpg" alt="Barasoain Church">
+                <h3>Barasoain Church</h3>
+                <p>Known as the "Cradle of Democracy in the East," this historic church played a vital role in the country's independence.</p>
+                <div class="history">
+                    <p>💡 <b>History:</b> This church was the site of the first Philippine Congress in 1898, where the Malolos Constitution was drafted. It is considered a symbol of Philippine democracy.</p>
+                </div>
+            </div>
+                <div class="tourism-item">
+                    <img src="image.jpg" alt="St. Joseph the Worker Parish Church">
+                    <h3>St. Joseph the Worker Parish Church</h3>
+                    <p>(San José del Monte) – A historic parish under the Diocese of Malolos.</p>
+                    <div class="history">
+                        <p>💡 <b>History:</b> Established in 1997, this church serves as a significant religious center for the growing Catholic community in San José del Monte.</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+         <p>&copy; 2024 - 2025 ITP4 | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
